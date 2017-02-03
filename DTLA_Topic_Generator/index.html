@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+    <script type="text/javascript" src="scripts/topic_gen.js"> </script>
+</head>
+<body>
+    <script>
+    //DTLA ITEMS are 0-dtla_places 1-random_things 2-things_to_do 3-people 4-topic_starter 5-east_west_st 6-north_south_st
+	function scene_gen()
+	{
+	 return "So it was me and " + DTLA_gen(3) + " at " + DTLA_gen(0) + " talking about " + DTLA_gen(1) + ", when suddenly I seen " + DTLA_gen(1) + "</br>";
+	
+	}
+	
+	function nickp_scene1()
+	{
+	    return DTLA_gen(3) + " and " + DTLA_gen(3) + " were walking by " + DTLA_gen(0) + ", and were suprised by how much " + DTLA_gen(1) + " changed!! </br>";
+	}
+	
+    function nickp_scene2()
+	{
+	    return DTLA_gen(1) + " and " + DTLA_gen(3) + " were walking by " + DTLA_gen(0) + "!! </br>";
+	}
+	
+	function ean_scene1()
+	{
+	    return "I can\'t help but notice that " + DTLA_gen(2) + " made " + DTLA_gen(3) + " and " + DTLA_gen(3) + " become close friends at " + DTLA_gen(0) + "!! </br>";
+	}
+	
+	
+	
+	document.write('</br>' + ean_scene1());
+	document.write('</br>' + nickp_scene1());
+	document.write('</br>' + ean_scene1());
+	document.write('</br>' + nickp_scene2());
+	document.write('</br>' + scene_gen());
+	document.write('</br>' + ean_scene1());
+	</script>
+</body>
+</html>
